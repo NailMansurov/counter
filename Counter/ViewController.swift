@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    // Действие при нажатии кнопки "-"
+    // Действие при нажатии кнопки "-".
     @IBAction func minusButtonDidTap(_ sender: Any) {
         if count > 0 {
             count -= 1
@@ -46,14 +46,14 @@ class ViewController: UIViewController {
         }
     }
     
-    // Действие при нажатии кнопки "+"
+    // Действие при нажатии кнопки "+".
     @IBAction func plusButtonDidTap(_ sender: Any) {
         count += 1
         counterLabel.text = "Значение счётчика: \(count)"
         changesTextView.text += "\n\(addDateTime()): значение изменено на +1"
     }
     
-    // Действие при нажатии кнопки "Reset"
+    // Действие при нажатии кнопки "Reset".
     @IBAction func resetButtonDidTap(_ sender: Any) {
         count = 0
         counterLabel.text = "Значение счётчика: \(count)"
